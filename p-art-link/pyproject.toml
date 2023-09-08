@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "p-art-link"
+version = "0.1.0"
+description = ""
+authors = ["Antonis Klironomos <antonisklironomos@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+gpt4all = "^1.0.8"
+gdown = "^4.7.1"
+pandas = "^2.0.3"
+numpy = "1.23.5"
+wikimapper = "^0.2.0"
+sentencepiece = "^0.1.99"
+marisa-trie = "^0.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.1"
+seaborn = "^0.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
